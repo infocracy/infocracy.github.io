@@ -22,14 +22,8 @@ gulp build
 
 The site will now be in `dist`.
 
-Currently you need to manually run:
+To deploy the website run:
 
 ```
-mv dist /tmp/dist-tmp/
-git checkout master
-git rm -rf *
-cp -R /tmp/dist-tmp/* .
-rm -rf /tmp/dist-tmp
-git add *
-git push -u origin master --force
+./deploy.sh
 ```
